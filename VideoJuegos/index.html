@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de videojuegos</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="scene">
+        <div class="container front">
+            <div class="formulario">
+                <h2>Formulario de Videojuegos</h2>
+                <input id="tituloTxt" type="text" placeholder="Titulo del videojuego...">
+                <input id="generoTxt" type="text" placeholder="Genero del videojuego...">
+                <input id="plataformaTxt" type="text" placeholder="Plataforma del videojuego...">
+                <button id="guardarBtn">Guardar datos</button>
+            </div>
+            <div class="funciones">
+                <h2>Funciones de Búsqueda</h2>
+                <input id="searchTxt" type="text" placeholder="Buscar">
+                <button id="buscarBtn">Buscar un videojuego</button>
+                <br>
+                <button id="buscar_minBtn">Buscar el primer juego</button>
+                <button id="buscar_maxBtn">Buscar el último juego</button>
+            </div>
+            <button id="imprimirBtn">Imprimir</button>
+        </div>
+        <div class="container back">
+            <div class="result" id="result">
+                <h2>Datos del Videojuego</h2>
+                <div class="data" id="data">
+                    <!-- Aquí se mostrarán los datos -->
+                </div>
+                <button id="regresarBtn">Regresar</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./src/controllers/script.js"> </script>
+</body>
+
+</html>
